@@ -1,0 +1,12 @@
+function WB = WhiteBalance(img)
+    img = double(img);
+    % fetch each color channel
+    r = img(:,:,1);
+    g = img(:,:,2);
+    b = img(:,:,3);
+    % calculate the mean
+    [m, n, ~] = size(img);
+avgR = mean(r(:)); 
+avgG = mean(g(:)); 
+avgB = mean(b(:)); 
+end
