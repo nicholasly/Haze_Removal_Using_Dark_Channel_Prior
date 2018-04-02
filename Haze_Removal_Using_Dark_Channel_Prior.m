@@ -1,6 +1,6 @@
 clear;
 close all;
-image = imread('trees2.png');
+image = imread('01.png');
 image = double(image);
 image = image ./ 255;
 dark = multiscale_dark_channel(image);
